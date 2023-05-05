@@ -13,4 +13,5 @@ resource "aws_iam_policy" "ec2_access" {
 resource "aws_iam_policy_attachment" "attach_iam_policy" {
   policy_arn = aws_iam_policy.ec2_access.arn
   users = var.iam_users
+  name = "ec2_permissions"
 }
