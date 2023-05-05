@@ -12,6 +12,7 @@ resource "aws_iam_policy" "ec2_access" {
 
 resource "aws_iam_policy_attachment" "attach_iam_policy" {
   count = length(var.iam_users)
-  name = var.iam_users[count.index]
   policy_arn = aws_iam_policy.ec2_access.arn
+  name = var.iam_users[count.index]
+  
 }

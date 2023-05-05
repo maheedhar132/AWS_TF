@@ -17,6 +17,6 @@ variable "iam_users" {
 }
 
 # Set secrets via environment variables
-##  export TF_VAR_username=(the username)
-##  export TF_VAR_password=(the password)
+##  export TF_VAR_aws_access_key=(the username)
+##  export TF_VAR_aws_secret_key=(the password)
 # When you run Terraform, it'll pick up the secrets automatically
